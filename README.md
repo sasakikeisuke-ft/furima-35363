@@ -42,6 +42,7 @@ Things you may want to cover:
 ### Association
 
 - has_many :items
+- has_many :orders
 
 
 
@@ -72,7 +73,7 @@ Things you may want to cover:
 
 
 
-## order テーブル
+## orders テーブル
 
 | Column           | Type         | Options                        |
 | ---------------- | ------------ | ------------------------------ |
@@ -82,19 +83,20 @@ Things you may want to cover:
 
 ### Association
 
+- belongs_to :user
 - belongs_to :item
-- has_one :adress
+- has_one :address
 
 
 
-## adress テーブル
+## addresses テーブル
 
 | Column           | Type         | Options                        |
 | ---------------- | ------------ | ------------------------------ |
 | potal_code       | integer      | null: false                    |
 | prefecture       | integer      | null: false                    |
 | city             | string       | null: false                    |
-| adress           | string       | null: false                    |
+| address           | string       | null: false                    |
 | building         | string       |                                |
 | phone_number     | integer      | null: false                    |
 | order            | references   | null: false, foreign_key: true |
