@@ -64,11 +64,6 @@ Things you may want to cover:
 
 - belongs_to :user
 - has_one :order
-- belongs_to_active_hash :condition
-- belongs_to_active_hash :category
-- belongs_to_active_hash :payment
-- belongs_to_active_hash :prefecture
-- belongs_to_active_hash :delivery_time
 
 
 
