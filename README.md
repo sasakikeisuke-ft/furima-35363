@@ -71,9 +71,8 @@ Things you may want to cover:
 
 | Column           | Type         | Options                        |
 | ---------------- | ------------ | ------------------------------ |
-| purchases_price  | integer      | null: false                    |
 | item             | references   | null: false, foreign_key: true |
-
+| user             | references   | null: false, foreign_key: true |
 
 ### Association
 
