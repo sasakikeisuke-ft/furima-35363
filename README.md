@@ -50,7 +50,6 @@ Things you may want to cover:
 
 | Column           | Type         | Options                        |
 | ---------------- | ------------ | ------------------------------ |
-| image            | ActiveStrage |                                |
 | item_name        | string       | null: false                    |
 | item_description | text         | null: false                    |
 | price            | integer      | null: false                    |
