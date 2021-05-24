@@ -53,11 +53,11 @@ Things you may want to cover:
 | item_name        | string       | null: false                    |
 | item_description | text         | null: false                    |
 | price            | integer      | null: false                    |
-| category         | integer      | null: false                    |
-| condition        | integer      | null: false                    |
-| payment          | integer      | null: false                    |
-| prefecture       | integer      | null: false                    |
-| delivery_time    | integer      | null: false                    |
+| category_id      | integer      | null: false                    |
+| condition_id     | integer      | null: false                    |
+| payment_id       | integer      | null: false                    |
+| prefecture_id    | integer      | null: false                    |
+| delivery_time_id | integer      | null: false                    |
 | user             | references   | null: false, foreign_key: true |
 
 ### Association
