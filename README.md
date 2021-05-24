@@ -86,7 +86,7 @@ Things you may want to cover:
 
 | Column           | Type         | Options                        |
 | ---------------- | ------------ | ------------------------------ |
-| potal_code       | integer      | null: false                    |
+| postal_code       | integer      | null: false                    |
 | prefecture       | integer      | null: false                    |
 | city             | string       | null: false                    |
 | address           | string       | null: false                    |
