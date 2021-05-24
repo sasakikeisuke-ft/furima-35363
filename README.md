@@ -86,10 +86,10 @@ Things you may want to cover:
 
 | Column           | Type         | Options                        |
 | ---------------- | ------------ | ------------------------------ |
-| postal_code       | integer      | null: false                    |
-| prefecture       | integer      | null: false                    |
+| postal_code      | integer      | null: false                    |
+| prefecture_id    | integer      | null: false                    |
 | city             | string       | null: false                    |
-| address           | string       | null: false                    |
+| address          | string       | null: false                    |
 | building         | string       |                                |
 | phone_number     | integer      | null: false                    |
 | order            | references   | null: false, foreign_key: true |
