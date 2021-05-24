@@ -98,6 +98,5 @@ Things you may want to cover:
 ### Association
 
 - belongs_to :order
-- belongs_to_active_hash :prefecture
 
 
