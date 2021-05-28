@@ -116,7 +116,7 @@ RSpec.describe User, type: :model do
         expect(@user.errors.full_messages).to include("First name is invalid. Input full-width characters")
       end
       
-      
+
       it 'last_name_kanaにひらがなが含まれていると登録できない' do
         @user.last_name_kana += 'ひらがな'
         @user.valid?
@@ -158,10 +158,6 @@ RSpec.describe User, type: :model do
         @user.valid?
         expect(@user.errors.full_messages).to include("First name kana is invalid. Input full-width katakana characters")
       end
-
     end
   end
-
 end
-
-# bundle exec rspec spec/models/user_spec.rb
