@@ -56,12 +56,12 @@ RSpec.describe Item, type: :model do
         expect(@item.errors.full_messages).to include('Price is out of setting range')
       end
       it 'priceが300未満だと登録できない' do
-        @item.price = '299'
+        @item.price = 299
         @item.valid?
         expect(@item.errors.full_messages).to include('Price is out of setting range')
       end
       it 'priceが10000000以上だと登録できない' do
-        @item.price = '10000000'
+        @item.price = 10000000
         @item.valid?
         expect(@item.errors.full_messages).to include('Price is out of setting range')
       end
@@ -71,7 +71,7 @@ RSpec.describe Item, type: :model do
         expect(@item.errors.full_messages).to include("Category can't be blank")
       end
       it 'category_idが未選択だと登録できない' do
-        @item.category_id = '0'
+        @item.category_id = 0
         @item.valid?
         expect(@item.errors.full_messages).to include("Category can't be blank")
       end
@@ -81,7 +81,7 @@ RSpec.describe Item, type: :model do
         expect(@item.errors.full_messages).to include("Condition can't be blank")
       end
       it 'condition_idが未選択だと登録できない' do
-        @item.condition_id = '0'
+        @item.condition_id = 0
         @item.valid?
         expect(@item.errors.full_messages).to include("Condition can't be blank")
       end
@@ -91,7 +91,7 @@ RSpec.describe Item, type: :model do
         expect(@item.errors.full_messages).to include("Payment can't be blank")
       end
       it 'payment_idが未選択だと登録できない' do
-        @item.payment_id = '0'
+        @item.payment_id = 0
         @item.valid?
         expect(@item.errors.full_messages).to include("Payment can't be blank")
       end
@@ -101,7 +101,7 @@ RSpec.describe Item, type: :model do
         expect(@item.errors.full_messages).to include("Prefecture can't be blank")
       end
       it 'prefecture_idが未選択だと登録できない' do
-        @item.prefecture_id = '0'
+        @item.prefecture_id = 0
         @item.valid?
         expect(@item.errors.full_messages).to include("Prefecture can't be blank")
       end
@@ -111,7 +111,7 @@ RSpec.describe Item, type: :model do
         expect(@item.errors.full_messages).to include("Delivery time can't be blank")
       end
       it 'delivery_time_idが未選択だと登録できない' do
-        @item.delivery_time_id = '0'
+        @item.delivery_time_id = 0
         @item.valid?
         expect(@item.errors.full_messages).to include("Delivery time can't be blank")
       end
