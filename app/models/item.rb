@@ -13,7 +13,6 @@ class Item < ApplicationRecord
                 less_than_or_equal_to: 9_999_999,
                 message: 'is out of setting range'
               }
-    validates :user
     with_options numericality: { other_than: 0, message: "can't be blank" } do
       validates :category_id
       validates :condition_id
