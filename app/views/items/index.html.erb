@@ -158,7 +158,7 @@
         </li>
       <% end %>
       <%# 出品がないときに表示するダミー商品 %>
-      <% if @item == nil %>
+      <% if @item.length == 0 %>
         <li class='list'>
           <%= link_to '#' do %>
           <%= image_tag "https://tech-master.s3.amazonaws.com/uploads/curriculums/images/Rails1-4/sample.jpg", class: "item-img" %>
