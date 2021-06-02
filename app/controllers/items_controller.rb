@@ -24,9 +24,6 @@ class ItemsController < ApplicationController
   end
 
   def edit
-    return if user_signed_in? && current_user.id == @item.user_id
-
-    redirect_to root_path
   end
 
   def update
@@ -44,8 +41,10 @@ class ItemsController < ApplicationController
                                  :prefecture_id, :delivery_time_id).merge(user_id: current_user.id)
   end
 
-def find_item
-  @item = Item.find(params[:id])
-end
-
+  def find_item
+    @item = Item.find(params[:id])
+    unless current_user.id == @item.user_id
+      redirect_to root_path
+    end
+  end
 end
