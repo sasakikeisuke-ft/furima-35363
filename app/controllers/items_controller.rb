@@ -25,6 +25,7 @@ class ItemsController < ApplicationController
   def edit
     @item = Item.find(params[:id])
       unless user_signed_in? && current_user.id == @item.user_id
+      # 売却済みだと、ログインしている出品者でもトップページへ遷移する。
       redirect_to root_path
     end
   end
