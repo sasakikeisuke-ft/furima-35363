@@ -12,7 +12,7 @@ class OrderAddress
     validates :address
     validates :phone_number,
       length: { in: 10..11 },
-      format: { with: /\A[0-9]\z/, message: 'is invalid. Input only number' }
+      format: { with: /\A[0-9]+\z/, message: 'is invalid. Input only number' }
     end
 
   def save
