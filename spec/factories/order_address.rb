@@ -6,9 +6,9 @@ FactoryBot.define do
     prefecture_id { Faker::Number.within(range: 1..47) }
     city { Gimei.address.city.kanji }
     address { Gimei.address.town.kanji }
-    building { "建物名" }
+    building { '建物名' }
     phone_number { Faker::PhoneNumber.subscriber_number(length: 11) }
     order_id { Faker::Number.number(digits: 2) }
-    token {"tok_abcdefghijk00000000000000000"}
+    token { 'tok_abcdefghijk00000000000000000' }
   end
 end
