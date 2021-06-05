@@ -6,7 +6,7 @@ RSpec.describe OrderAddress, type: :model do
       user = FactoryBot.create(:user)
       item = FactoryBot.create(:item)
       @order_address = FactoryBot.build(:order_address, user_id: user.id, item_id: item.id)
-      sleep 0.01
+      sleep 0.1
     end
 
     context '入力内容が適切であれば登録できる' do
