@@ -48,8 +48,6 @@ class ItemsController < ApplicationController
 
   def find_item
     @item = Item.find(params[:id])
-    unless current_user.id == @item.user_id
-      redirect_to root_path
-    end
+    redirect_to root_path if current_user.id != @item.user_id || !@item.order.nil?
   end
 end
