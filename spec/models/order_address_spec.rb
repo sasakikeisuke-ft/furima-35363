@@ -91,6 +91,11 @@ RSpec.describe OrderAddress, type: :model do
         @order_address.valid?
         expect(@order_address.errors.full_messages).to include('Phone number is too short (minimum is 10 characters)')
       end
+      it 'phone_numberに英字が含まれていると登録できない' do
+        @order_address.phone_number = 'abc456789'
+        @order_address.valid?
+        expect(@order_address.errors.full_messages).to include('Phone number is too short (minimum is 10 characters)')
+      end
     end
   end
 end
